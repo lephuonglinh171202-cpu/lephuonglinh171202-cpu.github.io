@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio</title>
+<title>Louise Le | Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -38,10 +38,10 @@
   .hero-eyebrow::before { content: ''; display: inline-block; width: 28px; height: 1px; background: var(--gold); }
   .hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(2.8rem, 6vw, 4.2rem); color: var(--white); line-height: 1.15; margin-bottom: 0.25rem; }
   .hero h1 em { font-style: italic; color: var(--gold-light); }
-  .hero-sub { font-size: 15px; color: rgba(255,255,255,0.55); margin: 1.5rem 0 2.5rem; max-width: 520px; font-weight: 300; line-height: 1.8; }
+  .hero-sub { font-size: 15px; color: rgba(255,255,255,0.55); margin: 1.5rem 0 2.5rem; max-width: 560px; font-weight: 300; line-height: 1.8; }
   .hero-badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 3rem; }
   .badge { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 14px; border: 1px solid rgba(201,168,76,0.35); color: var(--gold-light); border-radius: 2px; }
-  .hero-cta { display: flex; gap: 1rem; }
+  .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
   .btn-primary { background: var(--gold); color: var(--navy); padding: 12px 28px; font-size: 13px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; border-radius: 2px; transition: background 0.2s; }
   .btn-primary:hover { background: var(--gold-light); }
   .btn-outline { border: 1px solid rgba(255,255,255,0.25); color: rgba(255,255,255,0.75); padding: 12px 28px; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; border-radius: 2px; transition: border-color 0.2s, color 0.2s; }
@@ -80,11 +80,6 @@
   .pv-bar { background: var(--gold); border-radius: 2px 2px 0 0; flex: 1; }
 
   .mini-visual { background: var(--navy); border-radius: 3px; height: 100px; margin-bottom: 1.25rem; display: flex; align-items: center; justify-content: center; gap: 12px; padding: 16px; overflow: hidden; }
-  .spss-visual { display: flex; flex-direction: column; gap: 8px; width: 100%; }
-  .spss-row { display: flex; align-items: center; gap: 8px; }
-  .spss-label { font-size: 10px; color: rgba(255,255,255,0.4); width: 60px; text-align: right; flex-shrink: 0; }
-  .spss-bar-wrap { flex: 1; height: 8px; background: rgba(255,255,255,0.08); border-radius: 2px; }
-  .spss-bar-fill { height: 100%; border-radius: 2px; background: var(--gold); }
   .lindo-visual { display: flex; flex-direction: column; gap: 6px; width: 100%; }
   .lindo-eq { font-size: 11px; font-family: monospace; color: rgba(201,168,76,0.7); letter-spacing: 0.04em; }
 
@@ -122,7 +117,7 @@
     .timeline-item { grid-template-columns: 1fr; gap: 0.5rem; }
     .timeline-item::after { display: none; }
     .tl-dot { display: none; }
-    .tl-date { text-align: left; }
+    .tl-date { text-align: left; padding-right: 0; }
     .skills-grid { grid-template-columns: 1fr; }
   }
 </style>
@@ -130,7 +125,7 @@
 <body>
 
 <nav>
-  <div class="nav-logo">Phuong Linh Le</div>
+  <div class="nav-logo">Louise Le</div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#projects">Projects</a></li>
@@ -141,15 +136,15 @@
 
 <section class="hero" id="home">
   <div class="hero-content">
-    <div class="hero-eyebrow">Portfolio — 2025</div>
-    <h1>Turning data<br><em>into decisions</em><br>— across research, operations, and strategy.</h1>
-    <p class="hero-sub">MSc Business Analytics · Aston University<br>BSc Marketing Management · University of Northampton<br><br>I apply quantitative modelling, predictive analytics, and market research to solve real business problems — across research, operations, and project delivery.</p>
+    <div class="hero-eyebrow">Portfolio — 2026</div>
+    <h1>Turning data<br><em>into decisions</em><br>across research, operations, and strategy.</h1>
+    <p class="hero-sub">MSc Business Analytics · Aston University<br>BA Marketing Management · University of Northampton<br><br>Analytics-driven graduate skilled in Python, machine learning, predictive modelling, and market research, with hands-on experience translating data into clear, decision-ready insight across operational and commercial contexts.</p>
     <div class="hero-badges">
-      <span class="badge">Market Research</span>
       <span class="badge">Business Analytics</span>
-      <span class="badge">Operations & Sales</span>
-      <span class="badge">Project Management</span>
-      <span class="badge">Inventory Management</span>
+      <span class="badge">Machine Learning</span>
+      <span class="badge">Market Research</span>
+      <span class="badge">Operations</span>
+      <span class="badge">Project Leadership</span>
     </div>
     <div class="hero-cta">
       <a href="#projects" class="btn-primary">View my work</a>
@@ -162,49 +157,52 @@
   <div class="section-label">About me</div>
   <div class="about-grid">
     <div class="about-text">
-      <h2 class="section-title" style="margin-bottom:1.5rem;">Analytical mind.<br>Marketing instinct.</h2>
-      <p>I'm a postgraduate student combining an MSc in Business Analytics with a BSc in Marketing Management — trained to turn complex data into clear, actionable business decisions.</p>
-      <p>My BSc dissertation investigated Apple iPhone's sales performance and competitive position in the China market — using SWOT, PESTLE, and strategic frameworks to assess threats, market dynamics, and future recommendations. My MSc projects span Python-based predictive modelling, machine learning for accident severity classification, SPSS-driven car price prediction, and LINDO/Excel optimisation for business decision-making.</p>
-      <p>I'm actively seeking roles in <strong>Business Analytics, Market Research, Operations,</strong> and <strong>Project Management</strong> — where analytical rigour translates into commercial impact.</p>
+      <h2 class="section-title" style="margin-bottom:1.5rem;">Analytical thinker.<br>Commercial mindset.</h2>
+      <p>I’m an analytics-driven graduate with an MSc in Business Analytics and a First-Class BA in Marketing Management, combining technical analysis with practical commercial awareness.</p>
+      <p>My project work spans forecasting, classification, optimisation, and strategic research — from Python-based weather prediction and accident severity modelling to SPSS car price prediction, retail assortment optimisation in LINDO and Excel Solver, and dissertation research on Apple’s market position in China.</p>
+      <p>I’m currently seeking opportunities in business analytics, market research, operations, and strategy where I can turn complex information into actionable business insight.</p>
     </div>
     <div>
       <h3 style="font-family:'DM Serif Display',serif; font-size:1.15rem; margin-bottom:1.5rem; color:var(--navy);">Skills & tools</h3>
       <div class="skills-grid">
         <div>
-          <p class="skill-group-title">Research & Analysis</p>
-          <div class="skill-tags">
-            <span class="skill-tag">Market Research</span>
-            <span class="skill-tag">Market Entry Strategy</span>
-            <span class="skill-tag">Competitive Analysis</span>
-            <span class="skill-tag">Sales & Operations Insights</span>
-            <span class="skill-tag">Survey Design</span>
-          </div>
-        </div>
-        <div>
-          <p class="skill-group-title">Quantitative Tools</p>
+          <p class="skill-group-title">Programming & Analytics</p>
           <div class="skill-tags">
             <span class="skill-tag highlight">Python</span>
-            <span class="skill-tag highlight">SPSS</span>
-            <span class="skill-tag highlight">LINDO</span>
-            <span class="skill-tag">Excel</span>
-          </div>
-        </div>
-        <div>
-          <p class="skill-group-title">Statistical Methods</p>
-          <div class="skill-tags">
-            <span class="skill-tag">Correlation Analysis</span>
-            <span class="skill-tag">Regression & Predictive Analysis</span>
+            <span class="skill-tag">Machine Learning</span>
             <span class="skill-tag">Predictive Modelling</span>
             <span class="skill-tag">Cluster Analysis</span>
-            <span class="skill-tag">Data Sampling & Reliability</span>
+            <span class="skill-tag">SQL</span>
           </div>
         </div>
         <div>
-          <p class="skill-group-title">Operations & PM</p>
+          <p class="skill-group-title">Analytics Tools</p>
           <div class="skill-tags">
-            <span class="skill-tag">Decision Modelling</span>
-            <span class="skill-tag">Linear Optimisation</span>
+            <span class="skill-tag highlight">SPSS</span>
+            <span class="skill-tag highlight">LINDO</span>
+            <span class="skill-tag highlight">Excel</span>
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Tableau</span>
+          </div>
+        </div>
+        <div>
+          <p class="skill-group-title">Research & Strategy</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Market Research</span>
+            <span class="skill-tag">Competitive Analysis</span>
+            <span class="skill-tag">SWOT & PESTLE</span>
+            <span class="skill-tag">Survey Design</span>
+            <span class="skill-tag">Data Sampling</span>
+          </div>
+        </div>
+        <div>
+          <p class="skill-group-title">Business & Digital</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Project Leadership</span>
             <span class="skill-tag">Stakeholder Management</span>
+            <span class="skill-tag">Semrush</span>
+            <span class="skill-tag">HubSpot</span>
+            <span class="skill-tag">Google Analytics</span>
           </div>
         </div>
       </div>
@@ -214,7 +212,7 @@
 
 <section id="projects">
   <div class="section-label">Selected work</div>
-  <h2 class="section-title">Research & analytics<br>that deliver answers.</h2>
+  <h2 class="section-title">Research & analytics<br>that drive action.</h2>
   <div class="projects-grid">
 
     <div class="project-card featured">
@@ -230,16 +228,16 @@
         </div>
       </div>
       <div class="project-body">
-        <div class="project-type">Market Research & Competitive Strategy</div>
+        <div class="project-type">Dissertation · Market Research & Strategy</div>
         <h3>Apple iPhone Sales & Market Position in China</h3>
-        <p>Investigated the key factors affecting Apple iPhone's sales volume in the Chinese market, including competitive threats from domestic brands, market trends, and strategic challenges. Applied SWOT and PESTLE frameworks alongside strategic analysis to assess Apple's current position, identify future risks, and deliver practical recommendations for sustaining market share in one of the world's most competitive smartphone markets.</p>
+        <p>Investigated the drivers of iPhone sales in China using structured research and competitive analysis frameworks, including SWOT and PESTLE. Assessed Apple’s position against key competitors such as Huawei and Xiaomi, then developed evidence-based strategic recommendations to address challenges in one of the world’s most competitive smartphone markets.</p>
         <div class="project-meta">
           <span class="meta-tag gold">Market Research</span>
           <span class="meta-tag gold">SWOT & PESTLE</span>
           <span class="meta-tag">Competitive Analysis</span>
-          <span class="meta-tag">Strategic Frameworks</span>
+          <span class="meta-tag">Strategic Recommendations</span>
           <span class="meta-tag">China Market</span>
-          <span class="meta-tag">BSc Dissertation</span>
+          <span class="meta-tag">Dissertation</span>
         </div>
       </div>
     </div>
@@ -254,67 +252,68 @@
           <div style="width:24px; height:4px; border-radius:2px; background:var(--gold); opacity:0.7;"></div>
         </div>
       </div>
-      <div class="project-type">MSc · Predictive Analytics</div>
-      <h3>Car Price Prediction Model — SPSS Multi-Algorithm Analysis</h3>
-      <p>Used SPSS to build and compare multiple predictive models to forecast car prices from a provided dataset. Performed thorough data cleaning to remove outliers and extreme values that could skew model accuracy. Evaluated algorithms including regression and classification models, selecting the best-performing approach based on accuracy metrics — demonstrating how clean data and the right model choice directly impact business pricing decisions.</p>
+      <div class="project-type">2025 · SPSS Analysis</div>
+      <h3>Car Price Prediction — Multi-Algorithm Analysis</h3>
+      <p>Cleaned and prepared a used-car dataset in SPSS by removing outliers and treating extreme values before modelling the key drivers of price. Compared regression, factor, and cluster analysis approaches, then selected the best-performing model based on accuracy metrics to support dealer pricing decisions and identify over- or under-priced vehicles.</p>
       <div class="project-meta">
         <span class="meta-tag gold">SPSS</span>
         <span class="meta-tag">Predictive modelling</span>
         <span class="meta-tag">Data cleaning</span>
         <span class="meta-tag">Regression</span>
-        <span class="meta-tag">Model selection</span>
-        <span class="meta-tag">Outlier detection</span>
+        <span class="meta-tag">Factor analysis</span>
+        <span class="meta-tag">Cluster analysis</span>
       </div>
     </div>
 
     <div class="project-card">
       <div class="mini-visual">
         <div class="lindo-visual">
-          <div class="lindo-eq">MIN: 3x₁ + 5x₂ + 2x₃</div>
-          <div class="lindo-eq" style="color:rgba(255,255,255,0.3);">s.t. x₁ + x₂ ≥ 400</div>
-          <div class="lindo-eq" style="color:rgba(255,255,255,0.3);">2x₁ + x₃ ≤ 600</div>
-          <div class="lindo-eq" style="color:rgba(201,168,76,0.4);">→ Optimal: x₁=200, x₂=200</div>
+          <div class="lindo-eq">MIN liquidation overheads</div>
+          <div class="lindo-eq" style="color:rgba(255,255,255,0.3);">binary keep / remove</div>
+          <div class="lindo-eq" style="color:rgba(255,255,255,0.3);">capacity ≤ 96m²</div>
+          <div class="lindo-eq" style="color:rgba(201,168,76,0.4);">→ optimal assortment</div>
         </div>
       </div>
-      <div class="project-type">MSc · Decision Modelling & Operations</div>
-      <h3>Business Optimisation with LINDO & Excel</h3>
-      <p>Applied linear programming in LINDO and Excel Solver to model real-world business problems and find optimal solutions under different constraints — such as maximising profit given limited resources, staffing, or budget scenarios. Translated business questions into mathematical models, solved for optimal outcomes, and interpreted results in a practical business context to support operational and strategic decision-making.</p>
+      <div class="project-type">2025 · Optimisation</div>
+      <h3>Retail Space & Assortment Optimisation</h3>
+      <p>Formulated a binary integer prescriptive optimisation model in LINDO and Excel Solver to minimise liquidation overheads during a critical 70% physical retail footprint contraction. Engineered an interactive interface featuring user-adjustable parameters so stakeholders could dynamically alter operational constraints and trigger real-time re-optimisation, then conducted sensitivity analyses within a strict 96m² capacity ceiling to map supply-chain cost trade-offs for management.</p>
       <div class="project-meta">
         <span class="meta-tag gold">LINDO</span>
         <span class="meta-tag gold">Excel Solver</span>
-        <span class="meta-tag">Linear programming</span>
-        <span class="meta-tag">Profit optimisation</span>
-        <span class="meta-tag">Operations research</span>
-        <span class="meta-tag">Decision modelling</span>
+        <span class="meta-tag">Prescriptive modelling</span>
+        <span class="meta-tag">Binary optimisation</span>
+        <span class="meta-tag">Sensitivity analysis</span>
+        <span class="meta-tag">Decision automation</span>
       </div>
     </div>
 
     <div class="project-card" style="grid-column: 1 / -1; display:grid; grid-template-columns:1fr 1fr; gap:2rem;">
       <div>
-        <div class="project-type">MSc · Python Programming</div>
-        <h3>London Weather Prediction — Python</h3>
-        <p>Built a Python-based model to predict London weather patterns using historical data. Applied data processing and visualisation techniques to clean and explore the dataset, then developed a predictive model to forecast weather conditions — demonstrating end-to-end data science workflow from raw data to insight.</p>
+        <div class="project-type">2025 · Python & Machine Learning</div>
+        <h3>London Weather Prediction</h3>
+        <p>Built an end-to-end forecasting pipeline in Python using Scikit-learn, Pandas, and NumPy, covering data cleaning, feature engineering, model training, and evaluation. Benchmarked multiple models and visualised the results in Seaborn and Matplotlib, creating a workflow transferable to sales, footfall, and inventory forecasting.</p>
         <div class="project-meta">
           <span class="meta-tag gold">Python</span>
+          <span class="meta-tag">Scikit-learn</span>
           <span class="meta-tag">Pandas</span>
           <span class="meta-tag">NumPy</span>
-          <span class="meta-tag">Scikit-learn</span>
           <span class="meta-tag">Seaborn</span>
           <span class="meta-tag">Matplotlib</span>
-          <span class="meta-tag">Predictive modelling</span>
+          <span class="meta-tag">Forecasting</span>
         </div>
       </div>
       <div>
-        <div class="project-type">MSc · Machine Learning</div>
+        <div class="project-type">2025 · Machine Learning</div>
         <h3>Accident Severity Prediction for Car Rental Operations</h3>
-        <p>Built a machine learning classification model to predict accident severity levels for a car rental company. Findings directly informed five key business operations: (i) pricing & insurance, (ii) targeted safety communications, (iii) staffing & rental contracts, (iv) vehicle maintenance & inspection, and (v) claims planning — turning a predictive model into a practical operational tool.</p>
+        <p>Cleaned historical accident records in Python to isolate outliers and generated spatial density heatmaps to identify high-accident locations and recurring traffic hotspots. Benchmarked supervised classification models in Python and SPSS, used Grid Search for hyperparameter tuning to sustain over 80% accuracy, applied unsupervised clustering to group geographic zones by severity tiers, and engineered a parallel XGBoost quantile regression model to forecast low-probability, high-severity extreme events while mapping RMSE, MAE, MSE, and standard deviation to stakeholder priorities.</p>
         <div class="project-meta">
-          <span class="meta-tag gold">Machine Learning</span>
           <span class="meta-tag gold">Python</span>
-          <span class="meta-tag">Classification model</span>
-          <span class="meta-tag">Cluster</span>
-          <span class="meta-tag">Operations analytics</span>
-          <span class="meta-tag">Business application</span>
+          <span class="meta-tag gold">SPSS</span>
+          <span class="meta-tag">Classification</span>
+          <span class="meta-tag">Clustering</span>
+          <span class="meta-tag">XGBoost</span>
+          <span class="meta-tag">Quantile regression</span>
+          <span class="meta-tag">Risk analytics</span>
         </div>
       </div>
     </div>
@@ -324,17 +323,16 @@
 
 <section id="experience">
   <div class="section-label" style="color:var(--gold);">Education & experience</div>
-  <h2 class="section-title">Where I've<br><em style="font-style:italic; color:var(--gold-light);">learned & applied.</em></h2>
+  <h2 class="section-title">Where I’ve<br><em style="font-style:italic; color:var(--gold-light);">learned & applied.</em></h2>
   <div class="timeline">
 
-    <!-- MSc -->
     <div class="timeline-item">
       <div class="tl-date">2025 – 2027</div>
       <div class="tl-dot"></div>
       <div class="tl-content">
         <h4>MSc Business Analytics</h4>
-        <div class="tl-company">Aston University · Birmingham, UK</div>
-        <p>Advanced training in data analytics, machine learning, predictive modelling, and operational decision-making. Projects include London weather prediction (Python), accident severity classification (ML), car price prediction (SPSS), and business optimisation (LINDO/Excel).</p>
+        <div class="tl-company">Aston University · UK</div>
+        <p>Advanced training in Python, machine learning, digital technologies, research methods, and collaboration. Core projects include weather forecasting, accident severity classification, car price prediction, and business optimisation across operational decision-making contexts.</p>
         <div class="tl-tags">
           <span class="tl-tag">Python</span>
           <span class="tl-tag">Machine Learning</span>
@@ -346,51 +344,48 @@
       </div>
     </div>
 
-    <!-- Manager -->
     <div class="timeline-item">
-      <div class="tl-date">Jan 2024 – Present</div>
+      <div class="tl-date">Jan 2024 – Apr 2026</div>
       <div class="tl-dot"></div>
       <div class="tl-content">
         <h4>Manager</h4>
         <div class="tl-company">Banh Mi & Pho Limited · London, UK</div>
-        <p>Led market research to analyse customer behaviour and inform promotional strategies. Produced financial performance reports to track KPIs and support management decisions. Supervised data-driven inventory forecasting to optimise cash flow and supply management. Managed recruitment, staff training, workflow efficiency, and workforce allocation across the operation.</p>
+        <p>Aggregated 18,000 transaction records from a sister branch with the most similar customer segment to establish a baseline reference for a Python demand-forecasting model across 250+ active SKUs, then collected weekly sales records from the new branch to replace proxy data and accumulated 10,000 unique records for a fully custom branch model. Programmed statistical models to quantify a 15% promotional sales lift across three campaigns, supported pricing decisions that increased profit margins by 5% within six months and 10% within a year, integrated forecasting outputs into Excel-based inventory tracking across 200 stock categories to cut manual administration time by 80% and ingredient waste by 60%, and used historical POS data plus equipment tracking to improve labour planning, prevent stockouts, and eliminate disruptive maintenance failures.</p>
         <div class="tl-tags">
-          <span class="tl-tag">Market research</span>
-          <span class="tl-tag">Inventory management</span>
-          <span class="tl-tag">KPI reporting</span>
-          <span class="tl-tag">Operations</span>
-          <span class="tl-tag">Staff management</span>
+          <span class="tl-tag">Python</span>
+          <span class="tl-tag">Demand forecasting</span>
+          <span class="tl-tag">Price optimisation</span>
+          <span class="tl-tag">Inventory automation</span>
+          <span class="tl-tag">Capacity planning</span>
         </div>
       </div>
     </div>
 
-    <!-- Assistant Manager -->
     <div class="timeline-item">
       <div class="tl-date">Jul 2023 – Feb 2024</div>
       <div class="tl-dot"></div>
       <div class="tl-content">
         <h4>Assistant Manager</h4>
         <div class="tl-company">Vietnamese Food Limited · London, UK</div>
-        <p>Collected and analysed customer feedback to identify service improvement opportunities. Assisted in strategic planning using financial and operational data. Managed inventory, monitored weekly income, and created seasonal campaigns across social media platforms. Supported employee evaluations and performance management.</p>
+        <p>Collected and analysed customer feedback to identify service-improvement opportunities and supported strategic planning using financial and operational data. Managed seasonal campaigns, social-media content, inventory monitoring, weekly income tracking, and employee performance evaluation.</p>
         <div class="tl-tags">
           <span class="tl-tag">Customer analytics</span>
-          <span class="tl-tag">Strategic planning</span>
-          <span class="tl-tag">Inventory management</span>
-          <span class="tl-tag">Social media</span>
+          <span class="tl-tag">Operational data</span>
+          <span class="tl-tag">Campaign management</span>
+          <span class="tl-tag">Inventory monitoring</span>
         </div>
       </div>
     </div>
 
-    <!-- BSc Marketing -->
     <div class="timeline-item">
       <div class="tl-date">2022 – 2023</div>
       <div class="tl-dot"></div>
       <div class="tl-content">
-        <h4>BA Marketing Management — 1st Class (Distinction)</h4>
+        <h4>BA Marketing Management — First Class</h4>
         <div class="tl-company">University of Northampton · UK</div>
-        <p>Graduated with First Class Distinction. Modules: Market Research, Advertising, Digital Marketing, Global Marketing, Luxury Brand Management, Research Methods in Global Business. Dissertation: Apple iPhone Sales & Market Position in China — using SWOT, PESTLE, and strategic analysis.</p>
+        <p>Graduated with First-Class distinction. Studied market research, advertising, digital marketing, global marketing, luxury brand management, and research methods in global business, with a dissertation focused on Apple iPhone sales and competitive position in China.</p>
         <div class="tl-tags">
-          <span class="tl-tag">1st Class Distinction</span>
+          <span class="tl-tag">First Class</span>
           <span class="tl-tag">Market research</span>
           <span class="tl-tag">SWOT & PESTLE</span>
           <span class="tl-tag">Digital marketing</span>
@@ -398,14 +393,13 @@
       </div>
     </div>
 
-    <!-- BA Business Studies -->
     <div class="timeline-item">
       <div class="tl-date">2020 – 2022</div>
       <div class="tl-dot"></div>
       <div class="tl-content">
         <h4>BA Business Studies</h4>
         <div class="tl-company">Foreign Trade University × University of Bedfordshire · UK</div>
-        <p>Covered Finance & Accounting, Economics, Data Statistics, Marketing, Leadership, Operations and Project Management, and Strategy & Innovation.</p>
+        <p>Covered finance and accounting, economics, data statistics, marketing, leadership, operations and project management, and strategy and innovation.</p>
         <div class="tl-tags">
           <span class="tl-tag">Finance & Accounting</span>
           <span class="tl-tag">Operations & PM</span>
@@ -415,18 +409,18 @@
       </div>
     </div>
 
-    <!-- Project experiences -->
     <div class="timeline-item">
       <div class="tl-date">Sep 2022 – Feb 2023</div>
       <div class="tl-dot"></div>
       <div class="tl-content">
         <h4>Program Leader — Workshop Boditivity</h4>
         <div class="tl-company">Project Experience</div>
-        <p>Designed and executed a research-informed campaign targeting youth issues. Conducted trend analysis using Semrush and HubSpot, secured sponsorships, and managed a project budget of 5 million VND. Outcomes: 30% increase in Facebook interactions across 7 posts, 200 registrations, 20% increase in subscriptions.</p>
+        <p>Designed and executed a research-informed youth campaign using Semrush and HubSpot for trend analysis. Secured sponsorships, managed a 5 million VND budget, and led delivery and monitoring, resulting in a 30% increase in interactions across 7 Facebook posts, 200 registrations, and a 20% rise in subscriptions.</p>
         <div class="tl-tags">
           <span class="tl-tag">Campaign management</span>
           <span class="tl-tag">Trend analysis</span>
-          <span class="tl-tag">Semrush · HubSpot</span>
+          <span class="tl-tag">Semrush</span>
+          <span class="tl-tag">HubSpot</span>
           <span class="tl-tag">Budget management</span>
         </div>
       </div>
@@ -438,7 +432,7 @@
       <div class="tl-content">
         <h4>Project Leader — Workshop LinkedIn 101</h4>
         <div class="tl-company">Project Experience</div>
-        <p>Planned, designed and delivered a professional development workshop based on survey findings on career needs. Guided participants in building LinkedIn profiles and networking strategies. Evaluated effectiveness through post-event surveys and feedback analysis.</p>
+        <p>Planned, designed, and delivered a career-development workshop based on survey findings about participant needs. Guided attendees in professional profile building and networking, then evaluated impact using post-event surveys.</p>
         <div class="tl-tags">
           <span class="tl-tag">Survey research</span>
           <span class="tl-tag">Workshop delivery</span>
@@ -447,41 +441,55 @@
       </div>
     </div>
 
+    <div class="timeline-item">
+      <div class="tl-date">Nov 2021 – Jan 2022</div>
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <h4>Project Leader — Workshop Stress Management</h4>
+        <div class="tl-company">Project Experience</div>
+        <p>Performed market-trend analysis using Semrush and HubSpot to identify key youth issues, then collaborated with an influencer and an RMIT University professor to deliver the campaign. The project achieved a 20% increase in social-media interactions and attracted 100 attendees.</p>
+        <div class="tl-tags">
+          <span class="tl-tag">Trend analysis</span>
+          <span class="tl-tag">Campaign planning</span>
+          <span class="tl-tag">Social engagement</span>
+          <span class="tl-tag">Event delivery</span>
+        </div>
+      </div>
+    </div>
+
   </div>
 
-  <!-- Achievements -->
   <div style="margin-top:3rem; max-width:720px;">
     <div class="section-label" style="color:var(--gold); margin-bottom:1rem;">Achievements</div>
     <div style="display:flex; flex-direction:column; gap:0.75rem;">
       <div style="display:flex; align-items:flex-start; gap:1rem;">
         <span style="color:var(--gold); font-size:1rem; margin-top:2px;">★</span>
-        <p style="font-size:14px; color:rgba(255,255,255,0.55); font-weight:300;">Top 20 — HR Sandbox Competition 2022, organised by National Economics University</p>
+        <p style="font-size:14px; color:rgba(255,255,255,0.55); font-weight:300;">Top 20 — HR Sandbox Competition 2022, National Economics University</p>
       </div>
       <div style="display:flex; align-items:flex-start; gap:1rem;">
         <span style="color:var(--gold); font-size:1rem; margin-top:2px;">★</span>
-        <p style="font-size:14px; color:rgba(255,255,255,0.55); font-weight:300;">Participant — Intelligent Investment Competition 2021, organised by RMIT University Vietnam</p>
+        <p style="font-size:14px; color:rgba(255,255,255,0.55); font-weight:300;">Participant — Intelligent Investment Competition 2021, RMIT University Vietnam</p>
       </div>
       <div style="display:flex; align-items:flex-start; gap:1rem;">
         <span style="color:var(--gold); font-size:1rem; margin-top:2px;">★</span>
-        <p style="font-size:14px; color:rgba(255,255,255,0.55); font-weight:300;">Certification of Appreciation — RMIT SGS Human Development Club</p>
+        <p style="font-size:14px; color:rgba(255,255,255,0.55); font-weight:300;">Certificate of Appreciation — RMIT SGS Human Development Club</p>
       </div>
     </div>
   </div>
-
 </section>
 
 <section id="contact">
-  <div class="section-label">Let's connect</div>
-  <h2 class="section-title">Open to opportunities<br>in research & analytics.</h2>
-  <p class="contact-sub">Currently seeking graduate roles in Market Research, Business Analytics, Operations, and Project Management.</p>
+  <div class="section-label">Let’s connect</div>
+  <h2 class="section-title">Open to opportunities<br>in analytics, research & strategy.</h2>
+  <p class="contact-sub">Currently based in London and seeking graduate opportunities in business analytics, market research, and operations-focused roles.</p>
   <div class="contact-links">
     <a href="mailto:lephuonglinh171202@gmail.com" class="contact-link"><span>✉</span> lephuonglinh171202@gmail.com</a>
-    <a href="https://linkedin.com/in/yourprofile" class="contact-link"><span>in</span> LinkedIn</a>
-    <a href="#" class="contact-link"><span>↓</span> Download CV</a>
+    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="contact-link"><span>in</span> LinkedIn</a>
+    <a href="https://lephuonglinh171202-cpu.github.io" target="_blank" rel="noopener noreferrer" class="contact-link"><span>◉</span> Portfolio site</a>
   </div>
 </section>
 
-<footer>© 2025 Phuong Linh Le · Portfolio</footer>
+<footer>© 2026 Louise Le · Portfolio</footer>
 
 </body>
 </html>
